@@ -2,20 +2,34 @@
   <nav class="bg-gray-900 text-white fixed w-full z-20">
     <div class="container mx-auto flex justify-between items-center p-4">
       <a href="#" class="text-3xl font-bold">DroneWeb</a>
-      <button @click="toggleMenu" class="text-xl md:hidden">☰</button>
+      <button @click="toggleMenu" class="text-xl md:hidden focus:outline-none">
+        ☰
+      </button>
       <ul
-        :class="{ block: menuOpen, hidden: !menuOpen }"
-        class="md:flex space-x-4"
+        :class="[
+          'md:flex',
+          'absolute',
+          'md:static',
+          'bg-gray-900',
+          'w-full',
+          'md:w-auto',
+          'left-0',
+          'top-full',
+          menuOpen ? 'block' : 'hidden',
+        ]"
       >
         <li>
-          <router-link to="#home" class="hover:text-blue-400" @click="closeMenu"
+          <router-link
+            to="#home"
+            class="block py-2 px-4 hover:text-blue-400"
+            @click="closeMenu"
             >Home</router-link
           >
         </li>
         <li>
           <router-link
             to="#products"
-            class="hover:text-blue-400"
+            class="block py-2 px-4 hover:text-blue-400"
             @click="closeMenu"
             >Products</router-link
           >
@@ -23,7 +37,7 @@
         <li>
           <router-link
             to="#about"
-            class="hover:text-blue-400"
+            class="block py-2 px-4 hover:text-blue-400"
             @click="closeMenu"
             >About</router-link
           >
@@ -31,7 +45,7 @@
         <li>
           <router-link
             to="#features"
-            class="hover:text-blue-400"
+            class="block py-2 px-4 hover:text-blue-400"
             @click="closeMenu"
             >Features</router-link
           >
@@ -39,7 +53,7 @@
         <li>
           <router-link
             to="#contact"
-            class="hover:text-blue-400"
+            class="block py-2 px-4 hover:text-blue-400"
             @click="closeMenu"
             >Contact</router-link
           >
@@ -69,7 +83,7 @@ export default {
 
 <style scoped>
 nav {
-  background-color: rgba(0, 0, 0, 0.9);
+  /* background-color: rgba(0, 0, 0, 0.9); */
   transition: all 0.3s;
 }
 ul {
