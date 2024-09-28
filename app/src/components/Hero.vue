@@ -22,11 +22,12 @@
           >
             {{ slide.description }}
           </p>
-          <button
+          <router-link
+            :to="`/drones/${slide.id}`"
             class="mt-6 px-6 md:px-8 py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 animate-bounce"
           >
             Learn More
-          </button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -41,22 +42,35 @@ export default {
       currentIndex: 0,
       slides: [
         {
-          title: "Explore the Future of Drones",
-          description: "Innovative solutions for every industry.",
+          id: 1,
+          title: "Drone Alpha",
+          description:
+            "The ultimate drone for professional aerial photography.",
           image:
             "https://blogs.icrc.org/law-and-policy/wp-content/uploads/sites/102/2022/03/Drone-image-1096x620.jpg",
         },
         {
-          title: "Revolutionize Your Business",
-          description: "Harness the power of drone technology.",
+          id: 2,
+          title: "Drone Beta",
+          description: "Efficient, reliable, and powerful for industrial use.",
           image:
             "https://cdn.thewirecutter.com/wp-content/media/2023/08/drones-2048px-0718.jpg",
         },
         {
-          title: "Safety and Efficiency",
-          description: "Drones for safer operations.",
+          id: 3,
+          title: "Drone Gamma",
+          description:
+            "Compact design with incredible stability for surveying.",
           image:
             "https://mundogeo.com/wp-content/uploads/2024/03/18143629/drone-DJI-Mavic-3-Multispectral-revolucion%C3%A1rio-para-agricultura-e-mapeamento-756x400.jpg",
+        },
+        {
+          id: 4,
+          title: "Drone Delta",
+          description:
+            "Precision mapping for agriculture and environmental monitoring.",
+          image:
+            "https://www.commercialuavnews.com/images/drone_in_agriculture/hero.jpg",
         },
       ],
     };
