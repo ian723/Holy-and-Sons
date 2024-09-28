@@ -10,21 +10,26 @@
       >
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div
-          class="flex flex-col items-center justify-center h-full text-white relative"
+          class="flex flex-col items-center justify-center h-full text-white relative px-4 md:px-8"
         >
-          <h1 class="text-5xl font-extrabold animate-fadeInDown">
+          <h1
+            class="text-3xl md:text-5xl font-extrabold animate-fadeInDown text-center"
+          >
             {{ slide.title }}
           </h1>
-          <p class="text-2xl mt-4 animate-fadeInUp">{{ slide.description }}</p>
+          <p
+            class="text-lg md:text-2xl mt-4 animate-fadeInUp text-center max-w-xl"
+          >
+            {{ slide.description }}
+          </p>
           <button
-            class="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 animate-bounce"
+            class="mt-6 px-6 md:px-8 py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 animate-bounce"
           >
             Learn More
           </button>
         </div>
       </div>
     </div>
-    
   </section>
 </template>
 
