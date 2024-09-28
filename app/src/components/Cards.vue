@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="text-5xl font-bold ml-72 ">Discover Holy and Sons Products </div>
         <div class="flex space-x-4 p-4">
   <!-- Card 1 -->
   <div class="bg-white shadow-md rounded-lg p-6 w-1/3">
@@ -8,7 +9,7 @@
   </div>
 
   <!-- Card 2 -->
-  <div class="bg-white shadow-md rounded-lg p-6 w-1/3">
+  <div class="bg-white shadow-md rounded-lg p-6  w-1/3">
     <h2 class="text-xl font-bold mb-2">Card Title 2</h2>
     <p class="text-gray-700">This is some text inside the second card.</p>
   </div>
