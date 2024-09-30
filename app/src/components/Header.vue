@@ -5,7 +5,7 @@
         <div class="flex items-center justify-center">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <img class="h-10 w-10" src="" alt="Drone Company Logo" />
+            <img class="h-10 w-10" src="https://img.freepik.com/premium-vector/drone-logo_629862-146.jpg" alt="Drone Company Logo" />
           </div>
           <!-- Navigation Links (desktop) -->
           <div class="hidden md:block">
