@@ -39,8 +39,8 @@
                             <div class="ml-4 mb-4">
                                 <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address
                                 </h3>
-                                <p class="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p>
-                                <p class="text-gray-600 dark:text-slate-400">New York, EEUU</p>
+                                <p class="text-gray-600 dark:text-slate-400">PO Box 243 Njoro</p>
+                                <p class="text-gray-600 dark:text-slate-400">Nakuru,Kenyatta Ave</p>
                             </div>
                         </li>
                         <li class="flex">
@@ -58,8 +58,8 @@
                             <div class="ml-4 mb-4">
                                 <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
                                 </h3>
-                                <p class="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
-                                <p class="text-gray-600 dark:text-slate-400">Mail: tailnext@gmail.com</p>
+                                <p class="text-gray-600 dark:text-slate-400">Mobile: +254 725 882 092</p>
+                                <p class="text-gray-600 dark:text-slate-400">Mail: Holysonsltd@gmail.com</p>
                             </div>
                         </li>
                         <li class="flex">
