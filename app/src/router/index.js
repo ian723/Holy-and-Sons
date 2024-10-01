@@ -3,7 +3,6 @@ import {
   HomeView,
   AboutView,
   DronesView,
-  ServicesView,
   ContactView,
 } from "../views";
 
@@ -12,7 +11,6 @@ const routes = [
   { path: "/about", name: "about", component: AboutView },
   { path: "/drones", name: "drones", component: DronesView },
   { path: "/drones/:id", name: "drone", component: DronesView },
-  { path: "/services", name: "services", component: ServicesView },
   { path: "/contact", name: "contact", component: ContactView },
 ];
 

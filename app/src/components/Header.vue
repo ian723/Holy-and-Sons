@@ -28,12 +28,7 @@
                 @click="closeMenu"
                 >Drones</router-link
               >
-              <router-link
-                to="/services"
-                class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                @click="closeMenu"
-                >Services</router-link
-              >
+             
               <router-link
                 to="/contact"
                 class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -108,12 +103,7 @@
           @click="closeMenu"
           >Drones</router-link
         >
-        <router-link
-          to="/services"
-          class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          @click="closeMenu"
-          >Services</router-link
-        >
+      
         <router-link
           to="/contact"
           class="text-gray-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"

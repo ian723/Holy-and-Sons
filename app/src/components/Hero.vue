@@ -1,6 +1,6 @@
 <template>
-  <section id="carousel" class="h-screen relative overflow-hidden">
-    <div class="carousel-wrapper">
+  <section id="carousel" class="min-h-screen relative overflow-hidden">
+    <div class="carousel-wrapper h-full">
       <div
         v-for="(slide, index) in slides"
         :key="index"
@@ -13,18 +13,18 @@
           class="flex flex-col items-center justify-center h-full text-white relative px-4 md:px-8"
         >
           <h1
-            class="text-3xl md:text-5xl font-extrabold animate-fadeInDown text-center"
+            class="text-2xl md:text-4xl lg:text-5xl font-extrabold animate-fadeInDown text-center"
           >
             {{ slide.title }}
           </h1>
           <p
-            class="text-lg md:text-2xl mt-4 animate-fadeInUp text-center max-w-xl"
+            class="text-md md:text-lg lg:text-2xl mt-4 animate-fadeInUp text-center max-w-xl"
           >
             {{ slide.description }}
           </p>
           <router-link
             :to="`/drones/${slide.id}`"
-            class="mt-6 px-6 md:px-8 py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 animate-bounce"
+            class="mt-6 px-4 md:px-6 lg:px-8 py-2 md:py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 animate-bounce"
           >
             Learn More
           </router-link>
@@ -64,14 +64,6 @@ export default {
           image:
             "https://mundogeo.com/wp-content/uploads/2024/03/18143629/drone-DJI-Mavic-3-Multispectral-revolucion%C3%A1rio-para-agricultura-e-mapeamento-756x400.jpg",
         },
-        {
-          id: 4,
-          title: "Drone Delta",
-          description:
-            "Precision mapping for agriculture and environmental monitoring.",
-          image:
-            "https://www.commercialuavnews.com/images/drone_in_agriculture/hero.jpg",
-        },
       ],
     };
   },
@@ -103,6 +95,7 @@ export default {
 .carousel-wrapper {
   transition: transform 0.9s ease-in-out;
 }
+
 .carousel-slide {
   position: absolute;
   top: 0;
@@ -112,32 +105,39 @@ export default {
   opacity: 0;
   transition: opacity 0.9s ease-in-out;
 }
+
 .carousel-slide.active {
   opacity: 1;
 }
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .animate-fadeInDown {
   animation: fadeInDown 1.5s ease-out;
 }
+
 .animate-fadeInUp {
   animation: fadeInUp 1.5s ease-out;
 }
