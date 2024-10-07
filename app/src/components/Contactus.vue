@@ -1,23 +1,22 @@
 <template>
   <div>
-    <section class="bg-blue-50 dark:bg-slate-800" id="contact">
+    <section class="bg-white" id="contact">
       <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div class="mb-4">
           <div class="mb-6 max-w-3xl text-center md:mx-auto md:mb-12">
             <p
-              class="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200"
+              class="text-base font-semibold uppercase tracking-wide text-blue-600"
             >
-              Contact
+              Contact Us
             </p>
             <h2
-              class="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-4xl md:text-5xl"
+              class="font-heading mb-4 font-bold tracking-tight text-gray-900 text-3xl sm:text-4xl md:text-5xl"
             >
-              Get in Touch
+              Let's Elevate Your Experience
             </h2>
-            <p
-              class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400"
-            >
-              In hac habitasse platea dictumst
+            <p class="mx-auto mt-4 max-w-3xl text-xl text-black">
+              We're here to answer all your drone-related questions and
+              inquiries.
             </p>
           </div>
         </div>
@@ -26,14 +25,15 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             <!-- Left Section -->
             <div class="md:pr-6">
-              <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                scelerisque sagittis ante, ac tincidunt sem venenatis ut.
+              <p class="mt-3 mb-12 text-lg text-black">
+                At Holy and Sons, we are dedicated to providing cutting-edge drone
+                technology and exceptional service. Our team is passionate about
+                helping you achieve your aerial goals, whether for photography,
+                agriculture, or surveying.
               </p>
               <!-- Address, Contact, Working Hours -->
               <ul class="space-y-6">
-                <li class="flex">
+                <li class="flex flex-col md:flex-row">
                   <div
                     class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50"
                   >
@@ -53,6 +53,38 @@
                       <path
                         d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
                       ></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-black">
+                      Our Address
+                    </h3>
+                    <p class="text-gray-600 dark:text-slate-400">
+                       Naivasha, Kenya
+                    </p>
+                  </div>
+                </li>
+                <li class="flex flex-col md:flex-row">
+                  <div
+                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-6 w-6"
+                    >
+                      <path
+                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                      ></path>
+                      <path d="M15 7a2 2 0 0 1 2 2"></path>
+                      <path d="M15 3a6 6 0 0 1 6 6"></path>
                     </svg>
                   </div>
                   <div class="ml-4">

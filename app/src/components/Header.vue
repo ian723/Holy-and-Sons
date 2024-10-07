@@ -4,8 +4,13 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center justify-center">
           <!-- Logo -->
-          <div class="flex-shrink-0">
-            <img class="h-10 w-10" src="../assets/logo.avif" alt="Drone Company Logo" />
+          <div class="flex-shrink-0 flex items-center">
+            <img
+              class="h-10 w-10"
+              src="../assets/logo.avif"
+              alt="Drone Company Logo"
+            />
+            <span class="ml-3 text-xl font-bold text-blue-500">Holy and Sons</span>
           </div>
           <!-- Navigation Links (desktop) -->
           <div class="hidden md:block">
