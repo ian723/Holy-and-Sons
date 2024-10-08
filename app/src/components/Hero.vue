@@ -43,7 +43,7 @@ export default {
       slides: [
         {
           id: 1,
-          title: "Drone Alpha",
+          title: "Phantom 4 Pro V2.0",
           description:
             "The ultimate drone for professional aerial photography.",
           image:
@@ -51,14 +51,14 @@ export default {
         },
         {
           id: 2,
-          title: "Drone Beta",
+          title: "Matrice 600",
           description: "Efficient, reliable, and powerful for industrial use.",
           image:
             "https://cdn.thewirecutter.com/wp-content/media/2023/08/drones-2048px-0718.jpg",
         },
         {
           id: 3,
-          title: "Drone Gamma",
+          title: "Inspire 2",
           description:
             "Compact design with incredible stability for surveying.",
           image:
