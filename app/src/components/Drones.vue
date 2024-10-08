@@ -65,7 +65,7 @@ export default {
       drones: [
         {
           id: 1,
-          name: "Drone Alpha",
+          name: "Phantom Pro 4",
           type: "Photography",
           description: "High-performance drone for photography.",
           image:
@@ -73,7 +73,7 @@ export default {
         },
         {
           id: 2,
-          name: "Drone Beta",
+          name: "Matrice 600",
           type: "Industrial",
           description: "Industrial drone with great endurance.",
           image:
@@ -81,7 +81,7 @@ export default {
         },
         {
           id: 3,
-          name: "Drone Gamma",
+          name: "Inspire 2",
           type: "Surveying",
           description: "Surveying drone with precise mapping technology.",
           image:
@@ -89,7 +89,7 @@ export default {
         },
         {
           id: 4,
-          name: "Drone Delta",
+          name: "Agras T30",
           type: "Photography",
           description: "Lightweight drone for aerial photography.",
           image:
