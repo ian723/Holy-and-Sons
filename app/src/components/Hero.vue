@@ -1,144 +1,86 @@
 <template>
-  <section id="carousel" class="min-h-screen relative overflow-hidden">
-    <div class="carousel-wrapper h-full">
-      <div
-        v-for="(slide, index) in slides"
-        :key="index"
-        class="carousel-slide h-full relative bg-fixed bg-center bg-cover"
-        :style="{ backgroundImage: `url(${slide.image})` }"
-        :class="{ active: index === currentIndex }"
-      >
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div
-          class="flex flex-col items-center justify-center h-full text-white relative px-4 md:px-8"
-        >
-          <h1
-            class="text-2xl md:text-4xl lg:text-5xl font-extrabold animate-fadeInDown text-center"
-          >
-            {{ slide.title }}
-          </h1>
-          <p
-            class="text-md md:text-lg lg:text-2xl mt-4 animate-fadeInUp text-center max-w-xl"
-          >
-            {{ slide.description }}
-          </p>
-          <router-link
-            :to="`/drones/${slide.id}`"
-            class="mt-6 px-4 md:px-6 lg:px-8 py-2 md:py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 animate-bounce"
-          >
-            Learn More
-          </router-link>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
-
-<script>
-export default {
-  name: "Carousel",
-  data() {
-    return {
-      currentIndex: 0,
-      slides: [
-        {
-          id: 1,
-          title: "Drone Alpha",
-          description:
-            "The ultimate drone for professional aerial photography.",
-          image:
-            "https://blogs.icrc.org/law-and-policy/wp-content/uploads/sites/102/2022/03/Drone-image-1096x620.jpg",
-        },
-        {
-          id: 2,
-          title: "Drone Beta",
-          description: "Efficient, reliable, and powerful for industrial use.",
-          image:
-            "https://cdn.thewirecutter.com/wp-content/media/2023/08/drones-2048px-0718.jpg",
-        },
-        {
-          id: 3,
-          title: "Drone Gamma",
-          description:
-            "Compact design with incredible stability for surveying.",
-          image:
-            "https://mundogeo.com/wp-content/uploads/2024/03/18143629/drone-DJI-Mavic-3-Multispectral-revolucion%C3%A1rio-para-agricultura-e-mapeamento-756x400.jpg",
-        },
-      ],
-    };
-  },
-  methods: {
-    nextSlide() {
-      this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-    },
-    prevSlide() {
-      this.currentIndex =
-        (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-    },
-    startAutoSlide() {
-      this.autoSlideInterval = setInterval(this.nextSlide, 6000);
-    },
-    stopAutoSlide() {
-      clearInterval(this.autoSlideInterval);
-    },
-  },
-  mounted() {
-    this.startAutoSlide();
-  },
-  beforeDestroy() {
-    this.stopAutoSlide();
-  },
-};
-</script>
-
-<style scoped>
-.carousel-wrapper {
-  transition: transform 0.9s ease-in-out;
-}
-
-.carousel-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
-}
-
-.carousel-slide.active {
-  opacity: 1;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
+  <div>
+      <div class="relative">
+     
+            
+  
+      <section class="bg-yellow-50 overflow-hidden">
+          <div class="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px]">
+              <div class="relative flex items-center justify-center w-full lg:order-2 lg:w-7/12">
+                  <div class="absolute bottom-0 right-0 hidden lg:block">
+                      <img class="object-contain w-auto h-48" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/curved-lines.png" alt="" />
+                  </div>
+  
+                  <div class="relative px-4 pt-24 pb-16 text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left">
+                      <h1 class="text-4xl font-bold text-black sm:text-6xl xl:text-8xl">
+                          Get it done.<br />
+                          Fast, Easy.
+                      </h1>
+                      <p class="mt-8 text-xl text-black">We help you to make your remote work life easier. Build a distruction free working experience.</p>
+  
+                      <form action="#" method="POST" class="max-w-xl mx-auto mt-8 bg-white lg:mx-0 sm:bg-transparent lg:mt-12 rounded-xl">
+                          <div class="p-4 sm:p-2 sm:bg-white sm:border-2 sm:border-transparent sm:rounded-full sm:focus-within:border-orange-500 sm:focus-within:ring-1 sm:focus-within:ring-orange-500">
+                              <div class="flex flex-col items-start sm:flex-row">
+                                  <div class="flex-1 w-full min-w-0">
+                                      <div class="relative text-gray-400 focus-within:text-gray-600">
+                                          <label for="email" class="sr-only"></label>
+                                          <input
+                                              type="email"
+                                              name="email"
+                                              id="email"
+                                              placeholder="Enter email to get started"
+                                              class="block w-full px-4 py-4 text-base text-center text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-full sm:text-left focus:border-transparent focus:ring-0 caret-orange-500"
+                                              required=""
+                                          />
+                                      </div>
+                                  </div>
+  
+                                  <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-full sm:w-auto sm:ml-4 sm:mt-0 hover:bg-orange-600 focus:bg-orange-600">
+                                      Try 14 days free
+                                  </button>
+                              </div>
+                          </div>
+                      </form>
+                      <p class="mt-5 text-base text-black">Instant access . No credit card required</p>
+                  </div>
+  
+                  <div class="absolute right-0 z-10 -bottom-16 lg:top-24 lg:-left-20">
+                      <img class="w-32 h-32 md:w-40 md:h-40" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/circular-text.png" alt="" />
+                  </div>
+              </div>
+  
+              <div class="relative w-full overflow-hidden lg:order-1 h-96 lg:h-auto lg:w-5/12">
+                  <div class="absolute inset-0">
+                      <img class="object-cover w-full h-full scale-150" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/man-working-on-laptop.jpg" alt="" />
+                  </div>
+  
+                  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+  
+                  <div class="absolute bottom-0 left-0">
+                      <div class="p-4 sm:p-6 lg:p-8">
+                          <div class="flex items-center">
+                              <svg class="w-10 h-10 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                  <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                              </svg>
+                              <h2 class="font-bold text-white text-7xl ml-2.5">395</h2>
+                          </div>
+                          <p class="max-w-xs mt-1.5 text-xl text-white">Professionals have organized their desk via PostCra</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  
+  </div>
+  </template>
+  
+  <script>
+  export default {
+  
   }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeInDown {
-  animation: fadeInDown 1.5s ease-out;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 1.5s ease-out;
-}
-</style>
+  </script>
+  
+  <style>
+  
+  </style>

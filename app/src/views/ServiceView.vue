@@ -1,11 +1,11 @@
 <template>
     <div>
-        <Drones/>
+    <service/>
     </div>
 </template>
 
 <script setup>
-import Drones from "@/components/Drones.vue"
+import service from '../components/service.vue';
 </script>
 
 <style lang="scss" scoped>

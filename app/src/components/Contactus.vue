@@ -16,9 +16,7 @@
             </h2>
             <p
               class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400"
-            >
-              In hac habitasse platea dictumst
-            </p>
+            ></p>
           </div>
         </div>
 
@@ -27,9 +25,9 @@
             <!-- Left Section -->
             <div class="md:pr-6">
               <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                scelerisque sagittis ante, ac tincidunt sem venenatis ut.
+                "Have questions or need assistance? Reach out to us anytime! Our
+                team is here to help with inquiries, support, or feedback. We’d
+                love to hear from you."
               </p>
               <!-- Address, Contact, Working Hours -->
               <ul class="space-y-6">
@@ -62,7 +60,7 @@
                       Our Address
                     </h3>
                     <p class="text-gray-600 dark:text-slate-400">
-                      Light house building along Kenyatta Avenue, Nakuru, Kenya
+                      263 -20100 Prestige Mall Nakuru
                     </p>
                   </div>
                 </li>
@@ -96,10 +94,10 @@
                       Contact
                     </h3>
                     <p class="text-gray-600 dark:text-slate-400">
-                      Mobile: +254725882092
+                      Mobile: +254 722 790574
                     </p>
                     <p class="text-gray-600 dark:text-slate-400">
-                      Mail: holysonsltd@gmail.com
+                      Email : miteipr8@gmail.com
                     </p>
                   </div>
                 </li>
@@ -191,14 +189,14 @@
                 </h2>
                 <div class="w-full h-80">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.3605577513303!2d36.06913381648718!3d-0.28510761959188413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298d95bffee3eb%3A0xf9f5bab9efd1dad4!2sKenyatta%20Ave%2C%20Nakuru!5e0!3m2!1sen!2ske!4v1727692440373!5m2!1sen!2ske"
-                    class="w-full h-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.76905535938!2d36.06496227582242!3d-0.28472833535333386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298dbef7feb415%3A0x2ac1252e8fce158d!2sPrestige%20Mall!5e0!3m2!1sen!2ske!4v1730796791272!5m2!1sen!2ske"
+                    width="600"
+                    height="450"
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                  >
-                  </iframe>
+                  ></iframe>
                 </div>
               </div>
             </div>
